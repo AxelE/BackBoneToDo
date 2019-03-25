@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <input class="title-input" type="text" name="title" value="<%= todo.get('title') %>">
+  <input class="date-input" type="date" name="date" value="<%= todo.get('duedate') %>">
+  <select class="status-select" id="status">
+    <option value="<%= todo.get('status') %>"><%= todo.get('status') %></option>
+    <option value="pending">pending</option>
+    <option value="done">done</option>
+    <option value="cancelled">cancelled</option>
+  </select>
+  <button class="btn btn-success modifyTodo"> Modifier </button>
+  </p>
+</div>
+<button type="button" class="btn btn-primary back-to-home">Retour</button>
